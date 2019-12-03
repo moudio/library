@@ -7,12 +7,13 @@ class Book {
         this.author = author;
     }
 }
-
+ const showLibrary = document.getElementById("showLibrary")
+  showLibrary.addEventListener('click', listOutBooks)
  
  const addBook = document.getElementById("addBook");
  const form = document.getElementById("form");
  const showFormButton = document.getElementById("showForm")
- addBook.addEventListener('click', addBookToLibrary());
+ addBook.addEventListener('click', addBookToLibrary);
   showFormButton.addEventListener("click", function(){
         if (form.style.display === "block") {
         form.style.display = "none"
@@ -37,6 +38,12 @@ class Book {
             console.log(myLibrary)
     
 
+    }
+
+    function listOutBooks(){
+        // for ( let book of myLibrary ) {
+            console.log (myLibrary)
+        // }
     }
 
 
