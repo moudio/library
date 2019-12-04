@@ -81,20 +81,23 @@ function render() {
     <td class="toggleReadStatus">${book.readStatus} <button class="btn btn-success btn-xs change-status-button">Change Status</button></td>
     <td class="removeBook"><button class='btn btn-danger'> Remove book </button></td> 
     `
- 
-    
+
     }
 
     for (let i = 0; i < removeBook.length; i++) {
       removeBook[i].addEventListener("click", removeBookFromLibrary);
     }
-    addEventListenersToStatus();
+
 
   } else {
     libraryDiv.style.display = "block";
     libraryBody.innerHTML =
       '<p class="bg-warning no-books"> No Books In Inventory. Add New Ones! </p>';
   }
+ for (let button of changeStatusButtons){
+   button.addEventListener("click", changeReadStatus)
+  }
+
 }
 
 
@@ -110,7 +113,21 @@ return read_value;
 }
 
 function changeReadStatus(e){
+  let tableRow = e.target.closest("tr");
+  let chunk = tableRow.innerHTML
+  let title = chunk.match(/<td>(.*?)<\/td>/)[1];
+  title = title.replace("<td>", "").replace("</td>", "").trim();
 
+  for(let i = 0 ; i < myLibrary.length; i++){
+    if (myLibrary[i].readStatus === "Read") {
+      myLibrary[i].readStatus = "Not Read"
+    }
+    else
+    {
+      myLibrary[i].readStatus = "Read"
+    }
+    render()
+  }
 }
 
 function addEventListenersToStatus(){
