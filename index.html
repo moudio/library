@@ -9,18 +9,26 @@
 </head>
 <body>
 <h1>Welcome to the library</h1>
-    <form  id = "form" >
+    <div id = "form"  >
         <label for="title">Book Title</label>
         <input type="text" id="title">
         <label for="author">Author</label>
         <input type="text" id="author">
-        <input type="submit" value="Add Book" id = "addBook">
-    </form>
+        <button id = "addBook">Add Book</button>
+    </div>
 
     <button type="button" id="showForm" > Show Form</button>
     <button type="button" id="showLibrary"> List of Books </button>
     <div id = "library">
-
+        <table>
+            <thead>
+                <th>Title</th>
+                <th>Author</th>
+            </thead>
+            <tbody id="library-table-body">
+                
+            </tbody>
+        </table>
     </div>
 <script src="script.js"></script>    
 </body>
