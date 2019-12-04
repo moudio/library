@@ -1,3 +1,33 @@
  #form {
-    display: none;
+     display: none;
+    min-height: 280px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
 } 
+
+#form input{
+    margin: 20px 0px;
+}
+#library {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.jumbotron {
+    background-position: center;
+    background-size: cover;
+    background: url('pictures/background.jpg');
+    color: white !important;
+
+}
+
+.app-container {
+    text-align: center;
+}
+
+
+
+.no-books {
+    margin: 20px 0;
+}
