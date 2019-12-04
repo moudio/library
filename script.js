@@ -1,5 +1,4 @@
 
-// VARIABLES
 const addBook = document.getElementById("addBook");
 const form = document.getElementById("form");
 const author = document.getElementById("author");
