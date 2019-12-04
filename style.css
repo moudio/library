@@ -6,8 +6,11 @@
     margin: 0 auto;
 } 
 
-#form input{
-    margin: 20px 0px;
+#addBook {
+    margin: 20px;
+}
+#form input[type="text"]{
+    margin: 10px 0px;
 }
 #library {
     width: 80%;
@@ -24,10 +27,20 @@
 
 .app-container {
     text-align: center;
+    font-size: 20px;
 }
 
 
 
 .no-books {
     margin: 20px 0;
+}
+
+
+th {
+    text-align: center;
+}
+
+.change-status-button {
+    margin: 0 5px;
 }
