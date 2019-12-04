@@ -23,7 +23,19 @@
         </div>
 
         <h2>Add a new book</h2>
+      
+          
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              
+        </div>
+
+
         <div id="form">
+                
             <label for="title">Book Title</label>
             <input type="text" id="title"> <br>
             <label for="author">Author</label>
@@ -39,6 +51,7 @@
         <button class="btn btn-success btn-lg" id="showForm"> Add Book</button>
         <button class="btn btn-warning btn-lg" id="showLibrary"> List of Books </button>
         <h2>All Your Books</h2>
+
 
         <div id="library">
             <table class="table">
@@ -58,6 +71,7 @@
     </div>
 
     <script src="script.js"></script>
+    
 </body>
 
 </html>
