@@ -1,0 +1,22 @@
+{
+  "name": "json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MouhaDiouf/library.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MouhaDiouf/library/issues"
+  },
+  "homepage": "https://github.com/MouhaDiouf/library#readme",
+  "devDependencies": {
+    "eslint": "^6.7.2"
+  }
+}

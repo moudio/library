@@ -1,0 +1,46 @@
+ #form {
+     display: none;
+    min-height: 280px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+} 
+
+#addBook {
+    margin: 20px;
+}
+#form input[type="text"]{
+    margin: 10px 0px;
+}
+#library {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.jumbotron {
+    background-position: center;
+    background-size: cover;
+    background: url('pictures/background.jpg');
+    color: white !important;
+
+}
+
+.app-container {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+.no-books {
+    margin: 20px 0;
+}
+
+
+th {
+    text-align: center;
+}
+
+.change-status-button {
+    margin: 0 5px;
+}
