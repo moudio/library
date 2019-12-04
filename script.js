@@ -54,6 +54,20 @@ function addBookToLibrary() {
 function removeBookFromLibrary(e) {
   let tableRow = e.target.closest("tr");
   libraryBody.removeChild(tableRow);
+  let chunk = tableRow.innerHTML
+  console.log(chunk)
+  let title = chunk.match(/<td>(.*?)<\/td>/)[1];
+  title = title.replace("<td>", "").replace("</td>", "").trim();
+
+console.log(`thi is title ${title}`)
+  for(let i = 0 ; i < myLibrary.length; i++){
+    if (myLibrary[i].title === title) {
+      console.log(`yes, found the book on index ${i}`)
+      myLibrary.splice(i, 1);
+    }
+  }
+  
+  
 }
 
 function render() {
