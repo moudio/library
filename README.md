@@ -1,5 +1,7 @@
 # Library App
+A JavaScript application to help users keep track of their books.
 
+![screenshot](./pictures/screenshot.png)
 
 ## Technologies
 
